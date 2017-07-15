@@ -1,0 +1,114 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.header{
+  background: #0dc441;
+  height:88rpx;
+  width: 100%;
+  position: relative;
+}
+.headerinfo{
+  width:40%;
+  height: 60rpx;
+  background:rgba(255, 255, 255, .5);
+  text-align: center;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  color: #fff;
+  line-height: 60rpx;
+  border-radius: 20rpx;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  border-bottom:2rpx solid #ccc;
+}
+.nav view{
+  height:100rpx;
+  line-height:100rpx; 
+  width:33.3%;
+  text-align:center;
+  /*border-bottom:5rpx solid #fff;*/
+  box-sizing: border-box
+}
+.bottom{
+  border-bottom:5rpx solid #0dc441;
+}
+image{
+  height: 350rpx;
+  width: 350rpx;
+  display: block;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content view{
+  display: inline-block;
+  /*border:1rpx solid #e5e5e5;*/
+  margin: 10rpx; 
+}
+.footer{
+  background: #0dc441;
+  height:110rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+  display: flex;
+  justify-content: space-around;
+}
+.footer view{
+  text-align: center;
+  padding: 10rpx 0;
+}
+.footer text{
+  color: #ddd;
+  display: block;
+  font-size: 22rpx;
+  font-family:"微软雅黑";
+}
+.camera{
+  margin-top:-44rpx;
+
+}
+.camera image{
+  width:120rpx;
+  height:120rpx;
+}
+swiper{
+  height: 100%;
+  padding-bottom: 100rpx;
+}
+#first,.mv,.freestyle{
+  overflow-y: scroll;
+  font-size: 24rpx;
+  text-align: center;
+}
+#first{
+  padding-top: 44rpx;
+}
+.freestyle text{
+  line-height: 50rpx;
+}
+video{
+  width: 100%;
+  margin: 10rpx;
+}
+.index{
+  width: 56rpx;
+  height: 56rpx;
+  display: block;
+}
+.shenming{
+  color:red;
+  font-size:24rpx;
+  text-align:center;
+  line-height:44rpx;
+}

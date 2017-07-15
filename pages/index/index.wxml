@@ -1,0 +1,72 @@
+<!--index.wxml-->
+  <!--<view class="header">
+    <view class="headerinfo">
+      <text>彩虹之音</text>
+    </view>
+  </view>  -->
+  <view class="nav">
+    <view class="{{curr==0?'bottom':''}}" bindtap="change" data-current="0">single</view>
+    <view class="{{curr==1?'bottom':''}}" bindtap="change" data-current="1">mv</view>
+    <view class="{{curr==2?'bottom':''}}" bindtap="change" data-current="2">freestyle</view>
+  </view>
+
+  <swiper current="{{curr}}" bindchange="bindchange" circular>
+    <!--<swiper-item>
+      <view class="content">
+        <view class="classname" wx:for="{{msgs}}">
+          <image src="{{item.url}}"></image>
+          <text>{{item.text}}</text>
+        </view>   
+      </view>
+    </swiper-item>-->
+    <swiper-item id="first">
+      <view class="content" >
+        <view class="classname" wx:for="{{songs}}">
+          <audio poster="{{item.albumpic_small}}" name="{{item.songname}}" author="{{item.singername}}" src="{{item.url}}" id="myAudio" controls></audio>
+        </view>   
+      </view>
+     
+    </swiper-item>
+     <view class="shenming">
+      申明：数据均来自于QQ音乐，请支持正版音乐！
+      </view>
+
+    <swiper-item class="mv">
+      <view class="content" wx:for="{{videos}}">       
+        <video src="{{item.url}}"    controls poster="{{item.poster}}"></video> 
+      </view>
+    </swiper-item>
+
+  <swiper-item class="freestyle">
+    <view class="content" >      
+      <view class="classname" wx:for="{{msgs}}">
+        <image src="{{item.url}}"></image>
+        <text>{{item.text}}</text>
+      </view>   
+    </view>
+  </swiper-item>
+  </swiper >
+
+  <view class="footer">
+    <view bindtap="toindex">
+      <image src="{{url2}}" class="index"></image>
+      <text>首页</text>
+    </view>
+    <!--<view>
+      <icon type="search" size="20"/>
+      <text>发现</text>
+    </view>-->
+    <view class="camera" bindtap="record">
+       <image src="{{url}}"></image>
+    </view>
+    <view bindtap="tologin">
+      <image src="/imgs/mine1.png" class="index"></image>
+      <text>我的</text>
+    </view>
+    <!--<view>
+      <icon type="search" size="20"/>
+      <text>退出</text>
+    </view>-->
+  </view> 
+
+

@@ -1,0 +1,28 @@
+.header{
+  height: 88rpx;
+  width: 100%;
+  background: #0dc441;
+  text-align: center;
+  line-height: 88rpx;
+  color: #fff;
+}
+.content{
+  width: 90%;
+  margin:0 auto;
+}
+.content input{
+  height: 66rpx;
+  border-bottom: 1rpx solid #7f7f7f;
+  margin-top: 54rpx;
+}
+.content text{
+  display: inline-block;
+}
+.regieter{
+  color: #a3e9b7;
+  display: inline-block;
+  text-decoration: underline;
+}
+.click{
+  margin: 54rpx 0;
+}

@@ -1,0 +1,16 @@
+<!--<view class="header">
+  <text>足球圈 — 登录</text>
+</view>-->
+<view class="content">
+  <input placeholder="手机号" bindinput="user"/>
+  <input placeholder="密码" type="password" bindinput="pass"/>
+  <view class="click">
+    <text>
+      还没有账号？点击此处立即
+    </text>
+    <view class="regieter" bindtap="regieter">
+      注册
+    </view>
+  </view>
+  <button type="primary" bindtap="submit">登 陆</button>
+</view>
